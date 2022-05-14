@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bc21_shoestore_leviettoan/static/css/main.b12bfec8.css",
+    "main.js": "/bc21_shoestore_leviettoan/static/js/main.f87c233d.js",
+    "static/js/787.1155753b.chunk.js": "/bc21_shoestore_leviettoan/static/js/787.1155753b.chunk.js",
+    "index.html": "/bc21_shoestore_leviettoan/index.html",
+    "main.b12bfec8.css.map": "/bc21_shoestore_leviettoan/static/css/main.b12bfec8.css.map",
+    "main.f87c233d.js.map": "/bc21_shoestore_leviettoan/static/js/main.f87c233d.js.map",
+    "787.1155753b.chunk.js.map": "/bc21_shoestore_leviettoan/static/js/787.1155753b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b12bfec8.css",
+    "static/js/main.f87c233d.js"
+  ]
+}
