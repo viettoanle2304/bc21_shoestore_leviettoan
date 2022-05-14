@@ -5,6 +5,7 @@ import "animate.css";
 export default class Modal extends Component {
   static propTypes = {
     content: PropTypes.object,
+    handleAddProduct: PropTypes.func,
   };
 
   state = {
@@ -30,7 +31,7 @@ export default class Modal extends Component {
   };
 
   renderContent = () => {
-    let { name, price, description, shortDescription, quantity, image } =
+    let { id, name, price, description, shortDescription, quantity, image } =
       this.props.content || "";
 
     if (this.state.isModalOpen) {
@@ -123,7 +124,7 @@ export default class Modal extends Component {
               <button
                 className="bg-black text-white p-2 text-sm active:bg-gray-600"
                 onClick={() => {
-                  console.log("add to cart click");
+                  this.props.handleAddProduct(id);
                 }}
               >
                 Add to cart

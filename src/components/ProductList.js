@@ -6,6 +6,7 @@ export default class ProductList extends Component {
   static propTypes = {
     productsData: PropTypes.array,
     setStateModal: PropTypes.func,
+    onProductAdd: PropTypes.func,
   };
 
   render() {
@@ -18,6 +19,7 @@ export default class ProductList extends Component {
               key={item.id}
               item={item}
               setStateModal={this.props.setStateModal}
+              onProductAdd={this.props.onProductAdd}
             />
           );
         })}

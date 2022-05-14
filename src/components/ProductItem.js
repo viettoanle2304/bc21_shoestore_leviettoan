@@ -5,6 +5,7 @@ export default class ProductItem extends Component {
   static propTypes = {
     item: PropTypes.object,
     setStateModal: PropTypes.func,
+    onCartAdd: PropTypes.func,
   };
 
   render() {
@@ -33,7 +34,7 @@ export default class ProductItem extends Component {
           <button
             className="bg-black text-white p-2 text-sm"
             onClick={() => {
-              console.log("add to cart click");
+              this.props.onProductAdd(id);
             }}
           >
             Add to cart
